@@ -1,20 +1,24 @@
-angka1 = (input("masukan angka pertama :"))
-angka2 = (input("masukan angka kedua :"))
+# Meminta input dari pengguna dan mengonversinya menjadi integer
+angka1 = int(input("Masukkan angka pertama: "))
+angka2 = int(input("Masukkan angka kedua: "))
 
+# Menampilkan pilihan operator
 print("tambah(+), kurang(-), kali(*), bagi(/)")
 
-operator = input("pilih salah satu operator : ")
+# Memilih operator
+operator = input("Pilih salah satu operator: ")
 
+# Mengeksekusi operasi berdasarkan operator yang dipilih
 if operator == '+':
-    operator = angka1 + angka2
+    hasil = angka1 + angka2
 elif operator == '-':
-    operator = angka1 - angka2
+    hasil = angka1 - angka2
 elif operator == '*':
-    operator = angka1 * angka2
+    hasil = angka1 * angka2
 elif operator == '/':
-    operator = angka1 / angka2
+    hasil = angka1 / angka2
 else:
-    print("operator yang anda gunakan tidak sesuai")
-        
+    hasil = "Operator yang anda gunakan tidak sesuai"
 
-print(operator)
+# Menampilkan hasil
+print("Hasil: ", hasil)
